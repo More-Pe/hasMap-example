@@ -44,7 +44,8 @@ public class Agenda {
                     // Delete contact
                     System.out.print("Enter name to delete: ");
                     name = scanner.nextLine();
-                    if (contactos.remove(name) != null) { // remove elimina si existe
+                    if (contactos.containsKey(name)) {// If contact exists
+                        contactos.remove(name); // Remove
                         System.out.println("Contact deleted.");
                     } else {
                         System.out.println("Contact not found.");
@@ -53,14 +54,14 @@ public class Agenda {
                 case 4:
                     // Show all contacts
                     System.out.println("All contacts:");
-                    for (String key : contactos.keySet()) { // keySet para iterar
+                    for (String key : contactos.keySet()) { // keySet for iterate
                         System.out.println(key + " → " + contactos.get(key));
                     }
                     break;
                 case 5:
                     System.out.println("Bye!");
-                    scanner.close(); // Cerrar el Scanner
-                    return; // Salir del programa
+                    scanner.close();
+                    return;
                 default:
                     System.out.println("Invalid option.");
             }

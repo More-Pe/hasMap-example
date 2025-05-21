@@ -11,6 +11,12 @@ It lets you:
 
 ---
 
+## 🖥️ Hash Map in Java - Presentation
+
+You can **view the full presentation** about Hash Maps in Java here:
+
+[Hash Map in Java - Presentation](https://view.genially.com/68286490ff56e91abaaf5ed4/presentation-hash-map-in-java)
+
 ## 💻 How It Works
 
 The app uses a `HashMap<String, String>` where:
